@@ -1,0 +1,142 @@
+"""OOP - Object Oriented Programming"""
+
+# class Product:  #class
+#     def __init__(self, name, price, description, rasm, weight, ingredients): # konstruktor method
+#         self.name = name
+#         self.price = price
+#         self.description = description
+#         self.rasm = rasm
+#         self.weight = weight
+#         self.ingredients = ingredients
+
+# smartphone = Product("Samsung Galaxy A30",
+#                       1_000_000,
+#                       "Smartphone",
+#                       "images/smarthphones/a30.png",
+#                       470,
+#                       "Metal, Plastic") #object
+
+# print(Product.__repr__(smartphone))
+
+# class School:
+#     def __init__(self, name, student_count, rating, address, capacity, avg_fee):
+#         self.name = name,
+#         self.student_count = student_count,
+#         self.rating = rating,
+#         self.address = address,
+#         self.capacity = capacity,
+#         self.fee = avg_fee
+
+#     def __repr__(self):
+#         return f"Name: {self.name}"
+
+#     def __get__(self, arg):
+#         return self.arg
+#     def __set__(self, arg):
+#         self.name = arg
+
+
+# maktab = School("180", 356, 48, "chilonzor, oqtepa", 800, 12_000_000)
+# print(maktab.__get__())
+# print(maktab.__repr__())
+
+
+""" ======================== Homework ===========================  """
+
+# 1-2
+# class Car:
+#     def __init__(self, brand, model, year):
+#         self.brand = brand
+#         self.model = model
+#         self.year = year
+
+#     def get_car_info(self):
+#         print(f"Yili: {self.year}, brandi: {self.brand}")
+
+# car1 = Car("mercedes", "eclass", 2004)
+
+# car1.get_car_info()
+
+# 3-4
+# class Person:
+#     def __init__(self, name, age, gender):
+#         self.name = name
+#         self.age = age
+#         self.gender = gender
+#     def greet(self):
+#         print(f"Salom, mening ismim {self.name}")
+
+# person = Person("Jamshid", 31, "Male")
+# person.greet()
+
+# 5-6-7
+# class Rectangle:
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+#     def area(self):
+#         print(f"Yuza: {self.length * self.width}")
+#     def perimeter(self):
+#         print(f"Perimeter: {(self.length + self.width) * 2}")
+
+# rectangle = Rectangle(40, 2)
+# rectangle.area()
+# rectangle.perimeter()
+
+
+# 8-9-10
+# class BankAccount:
+#     def __init__(self, owner, balance):
+#         self.owner = owner
+#         self.balance = balance
+
+#     def deposit(self, amount):
+#         self.balance += amount
+
+#     def withdraw(self, amount):
+#         if self.balance >= amount:
+#             self.balance -= amount
+#         else: print("Mablag' yetarli emas")
+    
+# 11-12
+# class Dog:
+#     def __init__(self, breed, age):
+#         self.breed = breed
+#         self.age = age
+
+#     def bark(self):
+#         print("Vov!")
+
+# 13-14
+# class Book:
+#     def __init__(self, title, author, pages):
+#         self.title=title
+#         self.author=author
+#         self.pages=pages
+    
+#     def short_description(self):
+#         print(f"Sarlavha: {self.title}, muallif: {self.author}")
+
+
+# 15-16
+# class Laptop:
+#     def __init__(self, brand, ram_size):
+#         self.brand = brand
+#         self.ram_size = ram_size
+#     def upgrade_ram(self, size):
+#         self.ram_size = size
+
+
+
+# 17-18
+# class Student:
+#     # grades = []
+#     def __init__(self, name, grades):
+#         self.grades = grades
+#         self.name = name
+#     def  calculate_average(self):
+#         return round(sum(self.grades)/len(self.grades), 2)
+
+
+# std = Student("Ismoil", [5,4,2,6,5,4,5,3,6])
+# print(std.calculate_average())
